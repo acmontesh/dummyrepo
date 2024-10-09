@@ -1,0 +1,140 @@
+TACC:  Starting up job 1994701 
+TACC:  Starting parallel tasks... 
+Options used:
+   --mesh ./Ex4/star.mesh
+   --refine 1
+   --order 1
+   --serial-format
+   --no-partial-assembly
+   --device cpu
+   --visualization
+   --no-adios2-streams
+Device configuration: cpu
+Memory configuration: host-std
+***********************************************************
+dim(R) = 10400
+dim(W) = 5120
+dim(R+W) = 15520
+***********************************************************
+
+
+ Num MPI tasks = 1
+
+ Num OpenMP threads = 1
+
+
+BoomerAMG SETUP PARAMETERS:
+
+ Max levels = 25
+ Num levels = 6
+
+ Strength Threshold = 0.250000
+ Interpolation Truncation Factor = 0.000000
+ Maximum Row Sum Threshold for Dependency Weakening = 0.900000
+
+ Coarsening Type = HMIS 
+
+ No. of levels of aggressive coarsening: 1
+
+ Interpolation on agg. levels= multipass interpolation
+ measures are determined locally
+
+
+ No global partition option chosen.
+
+ Interpolation = extended+i interpolation
+
+Operator Matrix Information:
+
+             nonzero            entries/row          row sums
+lev    rows  entries sparse   min  max     avg      min         max
+======================================================================
+  0    5120    55040  0.002     7   11    10.8  -5.517e-01   7.685e+00
+  1     632     5434  0.014     4   12     8.6  -2.805e-02   1.047e+01
+  2     295     5453  0.063     8   27    18.5  -1.907e-04   1.150e+01
+  3      76     1538  0.266     9   35    20.2   2.099e-15   1.250e+01
+  4      16      210  0.820     9   16    13.1   1.341e+00   9.272e+00
+  5       1        1  1.000     1    1     1.0   6.824e+00   6.824e+00
+
+
+Interpolation Matrix Information:
+                    entries/row        min        max            row sums
+lev  rows x cols  min  max  avgW     weight      weight       min         max
+================================================================================
+  0  5120 x 632     1    4   1.7   2.468e-02   1.084e+00   1.257e-01   1.084e+00
+  1   632 x 295     1    4   3.8   4.306e-02   4.658e-01   2.812e-01   1.002e+00
+  2   295 x 76      0    4   3.7   1.336e-02   4.847e-01   0.000e+00   1.000e+00
+  3    76 x 16      0    4   3.1   6.990e-03   5.247e-01   0.000e+00   1.000e+00
+  4    16 x 1       0    1   0.7   1.244e-01   4.176e-01   0.000e+00   1.000e+00
+
+
+     Complexity:    grid = 1.199219
+                operator = 1.229578
+                memory = 1.427489
+
+
+
+
+BoomerAMG SOLVER PARAMETERS:
+
+  Maximum number of cycles:         1 
+  Stopping Tolerance:               0.000000e+00 
+  Cycle type (1 = V, 2 = W, etc.):  1
+
+  Relaxation Parameters:
+   Visiting Grid:                     down   up  coarse
+            Number of sweeps:            1    1     1 
+   Type 0=Jac, 3=hGS, 6=hSGS, 9=GE:      8    8     9 
+   Point types, partial sweeps (1=C, -1=F):
+                  Pre-CG relaxation (down):   0
+                   Post-CG relaxation (up):   0
+                             Coarsest grid:   0
+
+MINRES: iteration   0: ||r||_B = 42.3542
+MINRES: iteration   1: ||r||_B = 30.8331
+MINRES: iteration   2: ||r||_B = 19.5572
+MINRES: iteration   3: ||r||_B = 7.25267
+MINRES: iteration   4: ||r||_B = 6.95274
+MINRES: iteration   5: ||r||_B = 2.19882
+MINRES: iteration   6: ||r||_B = 1.8886
+MINRES: iteration   7: ||r||_B = 1.10075
+MINRES: iteration   8: ||r||_B = 0.68436
+MINRES: iteration   9: ||r||_B = 0.632995
+MINRES: iteration  10: ||r||_B = 0.306441
+MINRES: iteration  11: ||r||_B = 0.271418
+MINRES: iteration  12: ||r||_B = 0.178153
+MINRES: iteration  13: ||r||_B = 0.109198
+MINRES: iteration  14: ||r||_B = 0.10567
+MINRES: iteration  15: ||r||_B = 0.0606096
+MINRES: iteration  16: ||r||_B = 0.0501942
+MINRES: iteration  17: ||r||_B = 0.043473
+MINRES: iteration  18: ||r||_B = 0.0246453
+MINRES: iteration  19: ||r||_B = 0.0239311
+MINRES: iteration  20: ||r||_B = 0.0164831
+MINRES: iteration  21: ||r||_B = 0.0111421
+MINRES: iteration  22: ||r||_B = 0.0109947
+MINRES: iteration  23: ||r||_B = 0.00660038
+MINRES: iteration  24: ||r||_B = 0.00566465
+MINRES: iteration  25: ||r||_B = 0.00488729
+MINRES: iteration  26: ||r||_B = 0.00280526
+MINRES: iteration  27: ||r||_B = 0.00271954
+MINRES: iteration  28: ||r||_B = 0.00179729
+MINRES: iteration  29: ||r||_B = 0.00123415
+MINRES: iteration  30: ||r||_B = 0.00122001
+MINRES: iteration  31: ||r||_B = 0.00074076
+MINRES: iteration  32: ||r||_B = 0.000596025
+MINRES: iteration  33: ||r||_B = 0.000521004
+MINRES: iteration  34: ||r||_B = 0.000300884
+MINRES: iteration  35: ||r||_B = 0.000290819
+MINRES: iteration  36: ||r||_B = 0.000206246
+MINRES: iteration  37: ||r||_B = 0.000137852
+MINRES: iteration  38: ||r||_B = 0.000137352
+MINRES: iteration  39: ||r||_B = 8.61528e-05
+MINRES: iteration  40: ||r||_B = 7.0897e-05
+MINRES: iteration  41: ||r||_B = 6.21031e-05
+MINRES: iteration  42: ||r||_B = 3.6761e-05
+MINRES converged in 42 iterations with a residual norm of 3.6761e-05.
+MINRES solver took 0.0308089s. 
+|| u_h - u_ex || / || u_ex || = 1.64707e-05
+|| p_h - p_ex || / || p_ex || = 5.04059e-06
+TACC:  Shutdown complete. Exiting. 
