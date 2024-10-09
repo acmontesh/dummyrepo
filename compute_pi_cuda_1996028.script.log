@@ -1,0 +1,31 @@
+WARNING (10/09/24 11:58:11): LAUNCHER_WORKDIR variable not set. Using current directory.
+Launcher: Setup complete.
+
+------------- SUMMARY ---------------
+   Number of hosts:    1
+   Working directory:  /work/09973/acmontesh/ls6/Ex5
+   Processes per host: 4
+   Total processes:    4
+   Total jobs:         6
+   Scheduling method:  dynamic
+
+-------------------------------------
+Launcher: Starting parallel tasks...
+using /tmp/launcher.1996028.hostlist.d8AobrtK to get hosts
+starting job on v330-024
+Warning: Permanently added 'v330-024' (ECDSA) to the list of known hosts.
+Launcher: Task 3 running job 1 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 20480; } &>> compute_pi_cuda.script.log)
+Launcher: Job 1 completed in 0 seconds.
+Launcher: Task 3 running job 2 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 204800; } &>> compute_pi_cuda.script.log)
+Launcher: Job 2 completed in 1 seconds.
+Launcher: Task 3 running job 3 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 2048000; } &>> compute_pi_cuda.script.log)
+Launcher: Task 2 running job 4 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 20480000; } &>> compute_pi_cuda.script.log)
+Launcher: Job 3 completed in 0 seconds.
+Launcher: Task 3 running job 5 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 204800000; } &>> compute_pi_cuda.script.log)
+Launcher: Job 4 completed in 0 seconds.
+Launcher: Task 2 running job 6 on v330-024.ls6.tacc.utexas.edu ({ /bin/time -f "%e" ./compute_pi_cuda 2048000000; } &>> compute_pi_cuda.script.log)
+Launcher: Job 5 completed in 0 seconds.
+Launcher: Task 3 done. Exiting.
+Launcher: Job 6 completed in 1 seconds.
+Launcher: Task 2 done. Exiting.
+Launcher: Done. Job exited without errors
